@@ -22407,10 +22407,22 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Home() {
+    // const [count, setCount] = useState(0);
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
-        'I am the Home component'
+        _react2.default.createElement(
+            "div",
+            null,
+            "I am the Home component"
+        ),
+        _react2.default.createElement(
+            "button",
+            { onClick: function onClick() {
+                    return console.log("Hello");
+                } },
+            "Increment"
+        )
     );
 }
 
